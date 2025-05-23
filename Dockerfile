@@ -8,6 +8,7 @@ RUN apt-get update && apt-get install -y \
 
 RUN  python3 -m venv venv
 RUN  venv/bin/pip  install pyyaml
+RUN  source venv/bin/activate
 
 COPY feed.py /usr/bin/feed.py
 COPY entrypoint.sh /entrypoint.sh 
