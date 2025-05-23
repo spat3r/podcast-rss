@@ -3,6 +3,7 @@
 echo "=========================="
 
 ls -la ./
+pwd
 ls -la ./venv/bin/
 
 source venv/bin/activate.sh
