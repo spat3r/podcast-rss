@@ -18,7 +18,7 @@ jobs:
         run: python feed.py
       - name: push repo
         run: |
-          git congig user.name github-actions
+          git config user.name github-actions
           git config user.emal github-actions@github.com
           git add .
           git commit -m "Modified feed"
