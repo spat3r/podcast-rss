@@ -2,11 +2,11 @@
 
 echo "=========================="
 
-ls -la ./
+ls -la /usr/bin/
 pwd
-ls -la ./venv/bin/
+ls -la /usr/bin/venv/bin/
 
-source venv/bin/activate.sh
+source /usr/bin/venv/bin/activate.sh
 
 git config --global user.name "${GITHUB_ACTOR}"
 git config --global user.email "${INPUT_EMAIL}"
