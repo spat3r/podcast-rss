@@ -2,7 +2,10 @@
 
 echo "=========================="
 
-source venv/bin/activate
+ls -la ./
+ls -la ./venv/bin/
+
+source venv/bin/activate.sh
 
 git config --global user.name "${GITHUB_ACTOR}"
 git config --global user.email "${INPUT_EMAIL}"
