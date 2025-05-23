@@ -7,7 +7,7 @@ RUN apt-get update && apt-get install -y \
   pipx \
   git
 
-RUN pip3 install PyYAML
+RUN pipx install PyYAML
 
 COPY feed.py /usr/bin/feed.py
 
