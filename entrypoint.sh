@@ -1,18 +1,13 @@
-#! /bin/bash
+#!/bin/bash
 
-echo "=========================="
+# Execute feed.py
+python3 feed.py
 
+# Add all files to a git commit with the message "generating files"
+git config --global user.name "github-actions"
+git config --global user.email "github-actions@github.com"
+git add .
+git commit -m "generating files"
 
-source /usr/bin/venv/bin/activate
-
-git config --global user.name "${GITHUB_ACTOR}"
-git config --global user.email "${INPUT_EMAIL}"
-git config --global --add safe.directory /github/workspace
-
-python3 /usr/bin/feed.py
-
-git add -A && git commit -m "Update Feed"
-
-git push --set-upstream origin main
-
-echo "=========================="
+# Push the changes (you'll need to set up your GitHub token for this to work)
+# git push origin main
