@@ -4,6 +4,7 @@
 python3 feed.py
 
 # Add all files to a git commit with the message "generating files"
+git config --global --add safe.directory /github/workspace
 git config --global user.name "github-actions"
 git config --global user.email "github-actions@github.com"
 git add .
