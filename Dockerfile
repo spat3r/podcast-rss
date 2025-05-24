@@ -6,7 +6,7 @@ FROM ubuntu:latest
 RUN apt update && apt upgrade -y
 
 # Install Python and pip
-RUN apt install -y python3 python3-pip
+RUN apt install -y python3-full
 
 # Create a virtual environment
 RUN python3 -m venv /app/venv
